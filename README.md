@@ -98,9 +98,6 @@ Contributing
 
 Contributions are welcome. File issues describing bugs or feature requests, and submit PRs with clear descriptions and tests where possible.
 
-License
-
-This repository does not specify a license. Consider adding an explicit license (e.g., MIT) if you want to grant reuse rights.
 
 Acknowledgements
 
