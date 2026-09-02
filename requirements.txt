@@ -1,0 +1,11 @@
+langgraph
+langchain
+langchain-mistralai
+langchain-google-genai
+langchain-core
+tavily-python
+beautifulsoup4
+requests
+python-dotenv
+rich
+streamlit
