@@ -2,6 +2,26 @@
 
 DeepTrace AI is a multi-agent research assistant that finds, reads, and synthesizes high-quality, cited research briefings. It combines web search (Tavily), content scraping, and multiple LLM roles (writer + critic) to produce structured, verifiable research reports. A Streamlit UI is provided for interactive use, and a CLI flow is available for offline runs.
 
+What is it?
+
+DeepTrace AI is a pipeline and application that automates evidence-based research brief generation. Given a topic, it:
+
+- Discovers relevant online sources using Tavily search
+- Scrapes and extracts the readable content from those sources
+- Uses a writer LLM to draft a structured report (Introduction, Key Findings, Analysis, Conclusion, Sources)
+- Uses a critic LLM to evaluate accuracy and quality, then iterates the draft until it reaches an approval threshold or a maximum number of revisions
+
+Why it exists
+
+Researchers, analysts, product teams, and students often need concise, evidence-backed summaries but lack time to discover, read, and synthesize many sources. DeepTrace AI helps by automating that workflow while keeping traceability to original URLs. It reduces time-to-insight, enforces source-tracing, and helps produce consistently structured reports that are easier to review and share.
+
+Key benefits
+
+- Faster evidence synthesis: automates source discovery and first-draft generation
+- Traceability: every claim is linked back to source URLs used during research
+- Repeatable workflow: the same topic and config produce reproducible drafts (within model variance)
+- Extensible: swap LLM backends, improve scraping, or add caching and test coverage
+
 Key features
 
 - Multi-agent pipeline: search → scrape → draft → critique → revise
