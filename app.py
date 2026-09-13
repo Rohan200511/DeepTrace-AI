@@ -8,6 +8,7 @@ from typing import TypedDict
 from tavily import TavilyClient
 from langchain_mistralai import ChatMistralAI
 from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_groq import ChatGroq
 from langgraph.graph import StateGraph, START, END
 
 load_dotenv()
@@ -119,7 +120,7 @@ class State(TypedDict):
 
 def get_graph():
     tavily = TavilyClient()
-    writer_llm = ChatMistralAI(model="mistral-small-2506", temperature=0.7)
+    writer_llm =ChatGroq(model = "openai/gpt-oss-120b" , temperature=0.7)
     critic_llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.1)
 
     def search_node(state: State) -> dict:
