@@ -15,7 +15,7 @@ load_dotenv()
 
 # --- Page Configuration ---
 st.set_page_config(
-    page_title="DeepResearch AI | Smart Research Assistant",
+    page_title="DeepTrace AI | Smart Research Assistant",
     page_icon="🔬",
     layout="wide",
     initial_sidebar_state="expanded"
