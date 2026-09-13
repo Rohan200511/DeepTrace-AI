@@ -237,7 +237,7 @@ with st.sidebar:
     st.caption("Tip: Detailed topics yield more focused insights and statistics.")
 
 # --- Main Interface ---
-st.title("🔬 DeepResearch AI")
+st.title("🔬 DeepTrace AI")
 st.markdown("Enter any subject to generate a factual, double-checked briefing backed by real-world sources.")
 
 # Example prompts for everyday users
