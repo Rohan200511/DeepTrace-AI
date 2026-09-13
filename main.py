@@ -5,7 +5,8 @@ load_dotenv()
 
 from typing import TypedDict , Annotated
 from langgraph.graph import StateGraph , START , END
-from langchain_mistralai import ChatMistralAI  #Write
+#from langchain_mistralai import ChatMistralAI  #Write
+from langchain_groq import ChatGroq
 from langchain_google_genai import ChatGoogleGenerativeAI #Criticize
 from tavily import TavilyClient
 from langgraph.graph.message import add_messages 
@@ -65,7 +66,9 @@ def scraper(state : State) -> dict:
         "scraped_text" : out
     }
     
-writer_llm =ChatMistralAI(model = "mistral-small-2506" , temperature=0.7)
+#writer_llm =ChatMistralAI(model = "mistral-small-2603" , temperature=0.7)
+writer_llm =ChatGroq(model = "openai/gpt-oss-120b" , temperature=0.7)
+
 
 WRITER_SYSTEM_PROMPT = (
     """You are an expert research report writer.

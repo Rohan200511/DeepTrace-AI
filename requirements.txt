@@ -2,6 +2,7 @@ langgraph
 langchain
 langchain-mistralai
 langchain-google-genai
+langchain-groq
 langchain-core
 tavily-python
 beautifulsoup4
