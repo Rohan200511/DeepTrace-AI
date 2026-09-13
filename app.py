@@ -204,9 +204,10 @@ def get_graph():
 
     return builder.compile()
 
+
 # --- Smooth Scroll Utility ---
 def trigger_scroll(target_id: str):
-    st.components.v1.html(
+    st.html(
         f"""
         <script>
             setTimeout(function() {{
@@ -216,8 +217,7 @@ def trigger_scroll(target_id: str):
                 }}
             }}, 200);
         </script>
-        """,
-        height=0,
+        """
     )
 
 # --- Friendly Sidebar ---
